@@ -31,3 +31,5 @@ octave-workspace
 # data files in labs
 labs/*/data
 
+# vscode
+.vscode
