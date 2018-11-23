@@ -1,0 +1,2 @@
+shakey = read_image('','shakey.150.gif');
+show_image(LoG(shakey));
