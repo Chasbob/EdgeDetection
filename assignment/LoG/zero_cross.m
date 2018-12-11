@@ -7,7 +7,11 @@ function output = zero_cross(img, thresh)
     for i = 1:x
 
         for j = 1:y
-            output(i, j) = check_neighbours(img, i, j, thresh);
+
+            if img(i, j) > thresh
+                output(i, j) = check_neighbours(img, i, j, thresh);
+            end
+
         end
 
     end

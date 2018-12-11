@@ -6,4 +6,6 @@ function output = LoG(image, sd)
     LoG = conv2(gaus2d, laplacian, 'same');
     LoG_image = conv2(image, LoG, 'same');
     output = zero_cross(LoG_image, 1);
+    % output = edge(LoG_image,'zerocross');
+
 end
